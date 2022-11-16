@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: signerica fat;
+    src: url(../fonts/Signerica_Fat.ttf);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-family: signerica fat;
+}
+
+h2, p, ul>li, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: $color-mid-blue;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+}
+
+.logo-name {
+    h1 {
+        color: $color-mid-black;
+        
+        &:hover{
+            color: $color-brown;
+        }
+    }
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 22vh;
+
+    nav {
+        position: relative;
+        width: 130px;
+        height: 55px;
+        margin-right: 20px;
+        background: $color-brown;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.4s;
+        overflow: hidden;
+
+        &::before {
+            content: "MENU";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 55px;
+            background: $color-brown;
+            color: $color-white;
+            font-size: 20px;
+            font-weight: 800;
+            z-index: 11;
+            transition: all 0.3s;
+        }
+
+        ul {
+            display: flex;
+            line-height: 55px;
+            list-style: none;
+            align-content: center;
+            justify-content: center;
+
+            li>a {
+                color: $color-white;
+                font-size: 17px;
+                text-decoration: none;
+                margin: 0 -50px;
+                border-radius: 5px;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.4s;
+            }
+
+            li>a.active,
+            li>a:hover {
+                background-color: $color-beige;
+                color: $color-mid-black;
+            }
+        }
+    }
+
+    nav._expand {
+        width: 1000px;
+
+        &::before {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        ul li>a {
+            margin: 0 10px;
+            padding: 6px 15px;
+            opacity: 1;
+            pointer-events: auto;
+            transition: all 0.4s;
+        }
+    }
+}
+
+hr {
+    width: 60%;
+    margin: auto;
+}
+
+
+//footer
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-beige;
+    width: 1200px;
+    margin: auto; 
+}
+
+.rs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rs-linkedin {
+        background-color: $color-mid-blue;
+        border-radius: 50%;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+
+        &:hover {
+            background-color: $color-white;
+        }
+
+        path {
+            stroke: $color-mid-black;
+            fill: $color-mid-black;
+        }
+    }
+
+    .rs-git {
+        background-color: $color-mid-blue;
+        border-radius: 50%;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+
+        &:hover {
+            background-color: $color-white;
+        }
+
+        path {
+            stroke: $color-mid-black;
+            fill: $color-mid-black;
+        }
+    }
+
+    svg {
+        width: 30px;
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin-left: 3px;
+        font-size: 14px;
+    }
+
+    svg {
+        width: 20px;
+    }
+}
