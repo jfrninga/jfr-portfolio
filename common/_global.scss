@@ -62,7 +62,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
+
         img {
             width: 25%;
         }
@@ -210,17 +210,6 @@ hr {
         img {
             width: 90%;
         }
-    }
-
-    .reveal {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    .reveal-visible {
-        opacity: 1;
-        transform: translateY(0);
-        transition: 1s cubic-bezier(.5, 0, 0, 1);
     }
 
     img {
@@ -413,18 +402,9 @@ hr {
                 transition: .4s;
             }
 
-            .laravel {
-                
-            }
             .nodejs {
-               width: 70%;
-               height: 50%;
-            }
-            .vuejs {
-                
-            }
-            .wp {
-               
+                width: 70%;
+                height: 50%;
             }
 
             &:hover img {

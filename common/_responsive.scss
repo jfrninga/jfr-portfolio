@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1024px) {
+
+    // partie moi-même
+    #main-container {
+        .title-self {
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 35px;
+        }
+
+        .self-container {
+            display: block;
+            width: 100%;
+
+            .pic-jfr {
+                width: 50%;
+                display: flex;
+                margin: auto;
+                margin-bottom: 35px;
+            }
+        }
+
+        .text-self {
+            p {
+                text-align: justify;
+                max-width: 85%;
+            }
+        }
+
+        // partie expérience pro
+        .experience {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
+
+        .description-exp {
+            display: block;
+
+        }
+
+        .title-exp {
+            img {
+                width: 70%;
+                display: flex;
+                margin: auto;
+                margin-bottom: 35px;
+            }
+        }
+
+        .text-exp {
+            p {
+                max-width: 85%;
+                text-align: justify;
+            }
+        }
+
+        // partie projets
+        .projet {
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 35px;
+        }
+
+        .container {
+            display: block;
+            margin: auto;
+
+            .card-projet .slide {
+                width: 100%;
+                height: 200px;
+            }
+
+            .card-projet .name-projet h3 {
+                top: 75px;
+            }
+        }
+
+        // partie programmation
+        .programmation {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 2rem;
+        }
+
+        .cards2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        // partie hobbies
+        .hobbie {
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 35px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        // partie CV
+        .cv {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 45px;
+        }
+
+        .btn {
+            button {
+                &:hover {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    //footer
+    .footer-container {
+        width: 100%;
+    }
+
+    //button-top
+    .button-top {
+        left: 85%;
+    }
+
+
+
+}

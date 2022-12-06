@@ -55,7 +55,6 @@ header .bg-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 header .bg-img img {
   width: 25%;
@@ -176,15 +175,6 @@ hr {
 }
 #main-container .title-exp img {
   width: 90%;
-}
-#main-container .reveal {
-  opacity: 0;
-  transform: translateY(-30px);
-}
-#main-container .reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 #main-container img {
   width: 25%;
@@ -539,4 +529,106 @@ hr {
 .button-top:hover {
   transform: scale(1.5s);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  #main-container .title-self {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+  #main-container .self-container {
+    display: block;
+    width: 100%;
+  }
+  #main-container .self-container .pic-jfr {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  #main-container .text-self p {
+    text-align: justify;
+    max-width: 85%;
+  }
+  #main-container .experience {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+  #main-container .description-exp {
+    display: block;
+  }
+  #main-container .title-exp img {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  #main-container .text-exp p {
+    max-width: 85%;
+    text-align: justify;
+  }
+  #main-container .projet {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+  #main-container .container {
+    display: block;
+    margin: auto;
+  }
+  #main-container .container .card-projet .slide {
+    width: 100%;
+    height: 200px;
+  }
+  #main-container .container .card-projet .name-projet h3 {
+    top: 75px;
+  }
+  #main-container .programmation {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+  #main-container .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 2rem;
+  }
+  #main-container .cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #main-container .hobbie {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+  #main-container .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  #main-container .cv {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+  #main-container .btn button:hover {
+    display: none;
+  }
+  .footer-container {
+    width: 100%;
+  }
+  .button-top {
+    left: 85%;
+  }
 }/*# sourceMappingURL=main.css.map */
