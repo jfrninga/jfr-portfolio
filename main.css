@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -41,23 +40,38 @@ body {
 }
 
 header {
-  background-image: url("../images/fond.jpg");
+  background-image: url("images/fond.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-  margin-bottom: -60px !important;
+  height: 90vh;
   background-color: black;
   background-blend-mode: luminosity;
 }
-header .bg-img {
+header .wrapper-jfr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+header .wrapper-jfr .card-jfr {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .bg-img img {
-  width: 25%;
+header .wrapper-jfr .card-jfr video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #menu-container {
@@ -92,7 +106,6 @@ header .bg-img img {
 }
 #menu-container nav ul {
   display: flex;
-  line-height: 55px;
   list-style: none;
   align-content: center;
   justify-content: center;
@@ -113,7 +126,7 @@ header .bg-img img {
   color: #131B23;
 }
 #menu-container nav._expand {
-  width: 1000px;
+  width: 800px;
 }
 #menu-container nav._expand::before {
   opacity: 0;
@@ -148,6 +161,8 @@ hr {
 }
 #main-container .self-container .pic-jfr {
   border-radius: 5000px;
+  width: 30%;
+  height: 267px;
 }
 #main-container img {
   width: 25%;
@@ -156,14 +171,26 @@ hr {
   max-width: 75%;
   margin: auto;
 }
-#main-container .experience {
+#main-container .experience-bg {
+  background-image: url("images/experience-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+#main-container .experience-bg .experience {
   margin-bottom: 50px;
   margin-right: 100px;
   margin-top: 55px;
   text-align: right;
   font-size: 18px;
+  color: #ffffff;
+  padding-top: 30px;
 }
-#main-container .description-exp {
+#main-container .experience-bg .description-exp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,15 +200,16 @@ hr {
   margin-bottom: 20px;
   margin-top: 35px;
 }
-#main-container .title-exp img {
+#main-container .experience-bg .title-exp img {
   width: 90%;
 }
-#main-container img {
+#main-container .experience-bg img {
   width: 25%;
 }
-#main-container .text-exp p {
+#main-container .experience-bg .text-exp p {
   max-width: 60%;
   margin: auto;
+  color: #ffffff;
 }
 #main-container .projet {
   margin-bottom: 50px;
@@ -205,7 +233,7 @@ hr {
 }
 #main-container .container .card-projet .name-projet h3 {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -346,19 +374,31 @@ hr {
   filter: none;
   scale: 1.3;
 }
-#main-container .hobbie {
+#main-container .hobbie-bg {
+  background-image: url("images/hobbie-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+  background-blend-mode: luminosity;
+  margin-bottom: 100px;
+}
+#main-container .hobbie-bg .hobbie {
   margin-bottom: 70px;
   margin-left: 100px;
   margin-top: 55px;
   font-size: 18px;
+  color: #ffffff;
+  padding-top: 30px;
 }
-#main-container .wrapper {
+#main-container .hobbie-bg .wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 100px;
 }
-#main-container .wrapper .card-hobbie {
+#main-container .hobbie-bg .wrapper .card-hobbie {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -371,18 +411,18 @@ hr {
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
-#main-container .wrapper .card-hobbie:hover {
+#main-container .hobbie-bg .wrapper .card-hobbie:hover {
   transform: translateY(20px);
   cursor: pointer;
 }
-#main-container .wrapper .card-hobbie:hover::before {
+#main-container .hobbie-bg .wrapper .card-hobbie:hover::before {
   opacity: 1;
 }
-#main-container .wrapper .card-hobbie:hover .info {
+#main-container .hobbie-bg .wrapper .card-hobbie:hover .info {
   opacity: 1;
   transform: translateY(0px);
 }
-#main-container .wrapper .card-hobbie::before {
+#main-container .hobbie-bg .wrapper .card-hobbie::before {
   content: "";
   position: absolute;
   top: 0;
@@ -396,7 +436,7 @@ hr {
   transition: 0.5s;
   opacity: 0;
 }
-#main-container .wrapper .card-hobbie img {
+#main-container .hobbie-bg .wrapper .card-hobbie img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -406,7 +446,7 @@ hr {
   left: 0;
   border-radius: 50%;
 }
-#main-container .wrapper .card-hobbie .info {
+#main-container .hobbie-bg .wrapper .card-hobbie .info {
   position: relative;
   z-index: 3;
   color: #E7DFC6;
@@ -414,22 +454,16 @@ hr {
   transform: translateY(30px);
   transition: 0.5s;
 }
-#main-container .wrapper .card-hobbie .info h3 {
+#main-container .hobbie-bg .wrapper .card-hobbie .info h3 {
   margin: 0px;
   text-align: center;
-}
-#main-container .cv {
-  margin-bottom: 75px;
-  margin-right: 100px;
-  margin-top: 55px;
-  text-align: right;
-  font-size: 18px;
 }
 #main-container .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
+  cursor: pointer;
 }
 #main-container .btn button {
   padding: 12px 30px;
@@ -437,7 +471,6 @@ hr {
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 10px;
-  cursor: pointer;
   border: 1px solid #816C61;
 }
 #main-container .btn button:hover {
@@ -449,6 +482,9 @@ hr {
 #main-container .btn button a {
   text-decoration: none;
   color: #131B23;
+}
+#main-container .btn button a:hover {
+  color: #ffffff;
 }
 
 .footer-container {
@@ -551,21 +587,24 @@ hr {
     text-align: justify;
     max-width: 85%;
   }
-  #main-container .experience {
+  #main-container .experience-bg {
+    height: 155vh;
+  }
+  #main-container .experience-bg .experience {
     text-align: center;
     margin-right: 0;
     margin-bottom: 35px;
   }
-  #main-container .description-exp {
+  #main-container .experience-bg .description-exp {
     display: block;
   }
-  #main-container .title-exp img {
+  #main-container .experience-bg .title-exp img {
     width: 70%;
     display: flex;
     margin: auto;
     margin-bottom: 35px;
   }
-  #main-container .text-exp p {
+  #main-container .experience-bg .text-exp p {
     max-width: 85%;
     text-align: justify;
   }
@@ -605,12 +644,15 @@ hr {
     align-items: center;
     gap: 20px;
   }
-  #main-container .hobbie {
+  #main-container .hobbie-bg {
+    height: 172vh;
+  }
+  #main-container .hobbie-bg .hobbie {
     text-align: center;
     margin-left: 0;
     margin-bottom: 35px;
   }
-  #main-container .wrapper {
+  #main-container .hobbie-bg .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

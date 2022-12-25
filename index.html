@@ -31,17 +31,23 @@
                 <li><a href="#projet">Projets</a></li>
                 <li><a href="#code">Programmation</a></li>
                 <li><a href="#hobbie">Hobbies</a></li>
-                <li><a href="#cv">CV</a></li>
+                <!-- <li><a href="#cv">CV</a></li> -->
             </ul>
         </nav>
     </div>
     <!-- <hr> -->
 
     <header>
-        <div class="bg-img">
-            <img src="./images/ccn.jpg" class="img-jfr" alt="">
+        <div class="wrapper-jfr">
+            <div class="card-jfr">
+                <img src="./video/jfr2.gif" alt="">
+                <div class="video-container">
+                    <video autoplay muted loop id="my-video">
+                        <!-- <source src="./video/jfr2.gif" type="video/mp4"> -->
+                    </video>
+                </div>
+            </div>
         </div>
-
     </header>
 
     <div id="main-container">
@@ -50,181 +56,212 @@
         </div>
         <div class="self-container">
             <!-- <div class="img-self"> -->
-            <img src="./images/provisoire-jfr.jpg" alt="Photo de moi" class="pic-jfr" data-aos="fade-right"
-                data-aos-delay="50" data-aos-duration="1000">
+            <img src="./images/jfr.JPG" alt="Photo de moi" class="pic-jfr" data-aos="fade-right" data-aos-delay="50"
+                data-aos-duration="1000">
             <!-- </div> -->
             <div class="text-self" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Distinctio dicta vel soluta fugit et? Et praesentium enim tenetur.
-                    Animi ex fugit ipsam aliquam ad, officia culpa accusamus laborum recusandae excepturi?</p>
+                <p>Salut, Bienvenue sur mon portfolio. Moi c'est Jean François Régis <strong>Développeur web junior.</strong>
+                    Je suis passionné par le développement web et la transformation digitale, je souhaite contribuer à
+                    la réalisation de projets.<br>
+                    Actuellement, je suis dans ma dernière année chez MyDigitalSchool pour acquérir plus de compétence
+                    dans le domaine de développement web.<br>
+                    Retrouvez plus bas mes différentes compétences sur lesquelles je me suis perfectionné.
+                </p>
+            </div>
+        </div>
+        <div class="btn" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+            <div class="btn-cv">
+                <button><a href="./cv/CV_simbare.pdf" download target="_blank">télécharger mon cv</a></button>
             </div>
         </div>
 
-        <div class="experience" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
-            <h2 id="experience">Expérience Pro</h2>
-        </div>
-        <div class="description-exp">
-            <div class="title-exp" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
-                <!-- <h3>Nom de l'expérience pro</h3> -->
-                <img src="./images/ccn1.png" alt="Communauté du Chemin Neuf">
+        <!-- Expérience Pro -->
+        <div class="experience-bg">
+            <div class="experience" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
+                <h2 id="experience">Expérience Pro</h2>
             </div>
-            <div class="text-exp" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Distinctio dicta vel soluta fugit et? Et praesentium enim tenetur.
-                    Animi ex fugit ipsam aliquam ad, officia culpa accusamus laborum recusandae excepturi?</p>
+            <div class="description-exp">
+                <div class="title-exp" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+                    <!-- <h3>Nom de l'expérience pro</h3> -->
+                    <img src="./images/ccn1.png" alt="Communauté du Chemin Neuf">
+                </div>
+                <div class="text-exp" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <p>Développement des sites internet de la Communauté, supervision et maintenance des sites,
+                        aide au développement du système support (outils de suivi, de supervision, recherche de
+                        plug-in...)</p>
+                </div>
+            </div>
+
+            <div class="description-exp">
+                <div class="text-exp" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+                    <p>Gestions des informations pour l'application KTO, création visuelle sur photoshop (vignettes,
+                        posts pour les résaux sociaux).
+                        Mis à jour du contenu sur le site de KTO.
+                    </p>
+                </div>
+                <div class="title-exp" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <!-- <h3>Nom de l'expérience pro</h3> -->
+                    <img src="./images/kto.png" alt="KTO">
+                </div>
             </div>
         </div>
 
-        <div class="description-exp">
-            <div class="text-exp" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Distinctio dicta vel soluta fugit et? Et praesentium enim tenetur.
-                    Animi ex fugit ipsam aliquam ad, officia culpa accusamus laborum recusandae excepturi?</p>
+        <!-- Projets -->
+        <div class="projet-bg">
+            <div class="projet">
+                <h2 id="projet" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">Mes Projets</h2>
             </div>
-            <div class="title-exp" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
-                <!-- <h3>Nom de l'expérience pro</h3> -->
-                <img src="./images/kto.png" alt="KTO">
-            </div>
-        </div>
+            <div class="container">
 
-        <div class="projet">
-            <h2 id="projet" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">Mes Projets</h2>
-        </div>
-        <div class="container">
-
-            <div class="card-projet" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1500">
-                <div class="slide slide1">
-                    <div class="content">
-                        <div class="name-projet">
-                            <h3>We-tech</h3>
+                <div class="card-projet" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1500">
+                    <div class="slide slide1">
+                        <div class="content">
+                            <div class="name-projet">
+                                <h3>We-tech</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="content">
+                            <!-- <h3>
+                                Hello there!
+                            </h3> -->
+                            <p>Faire un pitch convainquant pour notre produit, déterminer
+                                notre cible, notre stratégie de communication.
+                                Technologies utilisées : HTML, CSS, Photoshop.</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide slide2">
-                    <div class="content">
-                        <h3>
-                            Hello there!
-                        </h3>
-                        <p>Trust yourself and keep going.</p>
+
+
+                <div class="card-projet" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="2000">
+                    <div class="slide slide1">
+                        <div class="content">
+                            <div class="name-projet">
+                                <h3>la Cuisine du Web</h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="card-projet" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="2000">
-                <div class="slide slide1">
-                    <div class="content">
-                        <div class="name-projet">
-                            <h3>la Cuisine du Web</h3>
+                    <div class="slide slide2">
+                        <div class="content">
+                            <!-- <h3>
+                                Hello there!
+                            </h3> -->
+                            <p>La refonte du site internet de la cuisine du web.
+                                Technologies utilisées : Html, css, javascript,
+                                photoshop, illustrator, Xd. (Un projet fictif)</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide slide2">
-                    <div class="content">
-                        <h3>
-                            Hello there!
-                        </h3>
-                        <p>Trust yourself and keep going.</p>
+
+
+                <div class="card-projet" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="2500">
+                    <div class="slide slide1">
+                        <div class="content">
+                            <div class="name-projet">
+                                <h3>Projet Fil Rouge</h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="card-projet" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="2500">
-                <div class="slide slide1">
-                    <div class="content">
-                        <div class="name-projet">
-                            <h3>Projet Fil Rouge</h3>
+                    <div class="slide slide2">
+                        <div class="content">
+                            <!-- <h3>
+                                Hello there!
+                            </h3> -->
+                            <p>Réalisation d'une stratégie de marketing, du design, identité visuelle de l'entreprise et
+                                d'un site vitrine sur wordpress pour une cliente.</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide slide2">
-                    <div class="content">
-                        <h3>
-                            Hello there!
-                        </h3>
-                        <p>Trust yourself and keep going.</p>
-                    </div>
-                </div>
-            </div>
 
+            </div>
         </div>
 
         <!-- Programmation -->
-        <div class="programmation" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
-            <h2 id="code">Langages de Programmation,<br>Framework et CMS</h2>
-        </div>
-        <div class="cards">
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="50" data-aos-duration="1000">
-                <img src="./images/html2.png" alt="Html" class="html">
+        <div class="code-bg">
+            <div class="programmation" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
+                <h2 id="code">Langages de Programmation,<br>Framework et CMS</h2>
             </div>
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="150" data-aos-duration="1500">
-                <img src="./images/css.png" alt="CSS" class="css">
+            <div class="cards">
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="50" data-aos-duration="1000">
+                    <img src="./images/html2.png" alt="Html" class="html">
+                </div>
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="150" data-aos-duration="1500">
+                    <img src="./images/css.png" alt="CSS" class="css">
+                </div>
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="200" data-aos-duration="2000">
+                    <img src="./images/sass.png" alt="Sass" class="sass">
+                </div>
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="250" data-aos-duration="2500">
+                    <img src="./images/js.png" alt="Javascript" class="js">
+                </div>
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="300" data-aos-duration="3000">
+                    <img src="./images/php.png" alt="Php" class="php">
+                </div>
             </div>
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="200" data-aos-duration="2000">
-                <img src="./images/sass.png" alt="Sass" class="sass">
-            </div>
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="250" data-aos-duration="2500">
-                <img src="./images/js.png" alt="Javascript" class="js">
-            </div>
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="300" data-aos-duration="3000">
-                <img src="./images/php.png" alt="Php" class="php">
-            </div>
-        </div>
-        <div class="cards2">
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="350" data-aos-duration="1500">
-                <img src="./images/laravel.png" alt="Larave" class="laravel">
-            </div>
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="400" data-aos-duration="2000">
-                <img src="./images/node.png" alt="NodeJs" class="nodejs">
-            </div>
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="450" data-aos-duration="2500">
-                <img src="./images/vue.png" alt="VueJs" class="vuejs">
-            </div>
-            <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="3000">
-                <img src="./images/wordpress.png" alt="WordPress" class="wp">
+            <div class="cards2">
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="350" data-aos-duration="1500">
+                    <img src="./images/laravel.png" alt="Larave" class="laravel">
+                </div>
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="400" data-aos-duration="2000">
+                    <img src="./images/node.png" alt="NodeJs" class="nodejs">
+                </div>
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="450" data-aos-duration="2500">
+                    <img src="./images/vue.png" alt="VueJs" class="vuejs">
+                </div>
+                <div class="card-programmation" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="3000">
+                    <img src="./images/wordpress.png" alt="WordPress" class="wp">
+                </div>
             </div>
         </div>
 
         <!-- Hobbie -->
-        <div class="hobbie" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
-            <h2 id="hobbie">Hobbies</h2>
-        </div>
-        <div class="wrapper">
-            <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="200" data-aos-duration="1500">
-                <img src="./images/volley.jpg" alt="">
-                <div class="info">
-                    <h3>Volley-Ball</h3>
+        <div class="hobbie-bg">
+
+            <div class="hobbie" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
+                <h2 id="hobbie">Hobbies</h2>
+            </div>
+            <div class="wrapper">
+                <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="200"
+                    data-aos-duration="1500">
+                    <img src="./images/volley.jpg" alt="">
+                    <div class="info">
+                        <h3>Volley-Ball</h3>
+                    </div>
+                </div>
+                <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="250"
+                    data-aos-duration="2000">
+                    <img src="./images/photo.jpg" alt="Photo & Vidéo">
+                    <div class="info">
+                        <h3>Photo & Vidéo</h3>
+                    </div>
+                </div>
+                <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="300"
+                    data-aos-duration="2500">
+                    <img src="./images/aventure.jpg" alt="Aventure">
+                    <div class="info">
+                        <h3>Aventure</h3>
+                    </div>
+                </div>
+                <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="350"
+                    data-aos-duration="3500">
+                    <img src="./images/code.jpg" alt="Code">
+                    <div class="info">
+                        <h3>Coder</h3>
+                    </div>
                 </div>
             </div>
-            <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="250" data-aos-duration="2000">
-                <img src="./images/photo.jpg" alt="Photo & Vidéo">
-                <div class="info">
-                    <h3>Photo & Vidéo</h3>
-                </div>
-            </div>
-            <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="300" data-aos-duration="2500">
-                <img src="./images/aventure.jpg" alt="Aventure">
-                <div class="info">
-                    <h3>Aventure</h3>
-                </div>
-            </div>
-            <div class="card-hobbie" data-aos="zoom-out" data-aos-easing="linear" data-aos-delay="350" data-aos-duration="3500">
-                <img src="./images/code.jpg" alt="Code">
-                <div class="info">
-                    <h3>Coder</h3>
-                </div>
-            </div>
+
         </div>
 
-        <div class="cv" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+        <!-- <div class="cv" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
             <h2 id="cv">Télécharger mon CV</h2>
         </div>
         <div class="btn" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1500">
             <div class="btn-cv">
                 <button><a href="./cv/CV_simbare.pdf" download>télécharger mon cv</a></button>
             </div>
-        </div>
+        </div> -->
 
     </div>
 

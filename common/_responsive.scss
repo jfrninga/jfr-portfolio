@@ -28,30 +28,33 @@
         }
 
         // partie expérience pro
-        .experience {
-            text-align: center;
-            margin-right: 0;
-            margin-bottom: 35px;
-        }
-
-        .description-exp {
-            display: block;
-
-        }
-
-        .title-exp {
-            img {
-                width: 70%;
-                display: flex;
-                margin: auto;
+        .experience-bg {
+            height: 155vh;
+            .experience {
+                text-align: center;
+                margin-right: 0;
                 margin-bottom: 35px;
             }
-        }
-
-        .text-exp {
-            p {
-                max-width: 85%;
-                text-align: justify;
+    
+            .description-exp {
+                display: block;
+    
+            }
+    
+            .title-exp {
+                img {
+                    width: 70%;
+                    display: flex;
+                    margin: auto;
+                    margin-bottom: 35px;
+                }
+            }
+    
+            .text-exp {
+                p {
+                    max-width: 85%;
+                    text-align: justify;
+                }
             }
         }
 
@@ -101,18 +104,21 @@
         }
 
         // partie hobbies
-        .hobbie {
-            text-align: center;
-            margin-left: 0;
-            margin-bottom: 35px;
-        }
-
-        .wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
+        .hobbie-bg {
+            height: 172vh;
+            .hobbie {
+                text-align: center;
+                margin-left: 0;
+                margin-bottom: 35px;
+            }
+    
+            .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+            }
         }
 
         // partie CV
