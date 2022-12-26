@@ -1,7 +1,44 @@
 @media only screen and (max-width: 1024px) {
 
+    header {
+        .wrapper-jfr {
+            .card-jfr {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #menu-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        gap: 20px;
+
+        nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+            }
+        }
+
+        nav._expand {
+            width: 800px;
+            height: 170px;
+            margin-top: 100px;
+
+            ul li>a {
+                line-height: 1.8;
+            }
+        }
+    }
+
     // partie moi-même
     #main-container {
+
         .title-self {
             text-align: center;
             margin-left: 0;
@@ -14,6 +51,7 @@
 
             .pic-jfr {
                 width: 50%;
+                height: 50%;
                 display: flex;
                 margin: auto;
                 margin-bottom: 35px;
@@ -24,23 +62,25 @@
             p {
                 text-align: justify;
                 max-width: 85%;
+                margin-bottom: 50px;
             }
         }
 
         // partie expérience pro
         .experience-bg {
             height: 155vh;
+
             .experience {
                 text-align: center;
                 margin-right: 0;
                 margin-bottom: 35px;
             }
-    
+
             .description-exp {
                 display: block;
-    
+
             }
-    
+
             .title-exp {
                 img {
                     width: 70%;
@@ -49,7 +89,7 @@
                     margin-bottom: 35px;
                 }
             }
-    
+
             .text-exp {
                 p {
                     max-width: 85%;
@@ -74,6 +114,15 @@
                 height: 200px;
             }
 
+            .card-projet .slide.slide1 {
+                transform: translateY(0px);
+            }
+
+            .card-projet .slide.slide2 {
+                transform: translateY(0px);
+                margin-bottom: 50px;
+            }
+
             .card-projet .name-projet h3 {
                 top: 75px;
             }
@@ -93,6 +142,12 @@
             align-items: center;
             gap: 20px;
             padding-bottom: 2rem;
+
+            .card-programmation {
+                img {
+                    filter: grayscale(0);
+                }
+            }
         }
 
         .cards2 {
@@ -101,33 +156,45 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
+
+            .card-programmation {
+                img {
+                    filter: grayscale(0);
+                }
+            }
         }
 
         // partie hobbies
         .hobbie-bg {
             height: 172vh;
+
             .hobbie {
                 text-align: center;
                 margin-left: 0;
                 margin-bottom: 35px;
             }
-    
+
             .wrapper {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 gap: 50px;
+
+                .card-hobbie {
+                    &:hover {
+                        transform: translateY(0px);
+
+                        .info {
+                            transform: translateY(0px);
+                        }
+                    }
+                }
             }
+
         }
 
-        // partie CV
-        .cv {
-            text-align: center;
-            margin-right: 0;
-            margin-bottom: 45px;
-        }
-
+        // partie button
         .btn {
             button {
                 &:hover {
@@ -145,9 +212,8 @@
 
     //button-top
     .button-top {
-        left: 85%;
+        left: 320px;
+        right: 0;
+        bottom: 85px;
     }
-
-
-
 }

@@ -568,6 +568,29 @@ hr {
 }
 
 @media only screen and (max-width: 1024px) {
+  header .wrapper-jfr .card-jfr img {
+    width: 100%;
+  }
+  #menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    gap: 20px;
+  }
+  #menu-container nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  #menu-container nav._expand {
+    width: 800px;
+    height: 170px;
+    margin-top: 100px;
+  }
+  #menu-container nav._expand ul li > a {
+    line-height: 1.8;
+  }
   #main-container .title-self {
     text-align: center;
     margin-left: 0;
@@ -579,6 +602,7 @@ hr {
   }
   #main-container .self-container .pic-jfr {
     width: 50%;
+    height: 50%;
     display: flex;
     margin: auto;
     margin-bottom: 35px;
@@ -586,6 +610,7 @@ hr {
   #main-container .text-self p {
     text-align: justify;
     max-width: 85%;
+    margin-bottom: 50px;
   }
   #main-container .experience-bg {
     height: 155vh;
@@ -621,6 +646,13 @@ hr {
     width: 100%;
     height: 200px;
   }
+  #main-container .container .card-projet .slide.slide1 {
+    transform: translateY(0px);
+  }
+  #main-container .container .card-projet .slide.slide2 {
+    transform: translateY(0px);
+    margin-bottom: 50px;
+  }
   #main-container .container .card-projet .name-projet h3 {
     top: 75px;
   }
@@ -637,12 +669,18 @@ hr {
     gap: 20px;
     padding-bottom: 2rem;
   }
+  #main-container .cards .card-programmation img {
+    filter: grayscale(0);
+  }
   #main-container .cards2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+  #main-container .cards2 .card-programmation img {
+    filter: grayscale(0);
   }
   #main-container .hobbie-bg {
     height: 172vh;
@@ -659,10 +697,11 @@ hr {
     align-items: center;
     gap: 50px;
   }
-  #main-container .cv {
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 45px;
+  #main-container .hobbie-bg .wrapper .card-hobbie:hover {
+    transform: translateY(0px);
+  }
+  #main-container .hobbie-bg .wrapper .card-hobbie:hover .info {
+    transform: translateY(0px);
   }
   #main-container .btn button:hover {
     display: none;
@@ -671,6 +710,8 @@ hr {
     width: 100%;
   }
   .button-top {
-    left: 85%;
+    left: 320px;
+    right: 0;
+    bottom: 85px;
   }
 }/*# sourceMappingURL=main.css.map */
