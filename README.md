@@ -4,7 +4,7 @@ J'ai essayé de faire un portfolio simple et facile de trouver les informations 
 
 Ce qui veut dire que j'ai utilisé des langages HTML, SCSS, Javascript et un framework qui s'appelle AOS qui m'a permis de faire différente animation de mes sections.
 
-Dans mon portfolio est composé de 5 parties :
+# Dans mon portfolio est composé de 5 parties :
     - la première partie je parle un peu de mon et de ce que je fais dans ma vie,
     - la deuxième ça va être des expérience pro les entreprises dans lesquelles j'ai travaillé, 
     - en troisième partie j'ai mis mes projets réalisés pendant ma formation ou en entreprise, 
