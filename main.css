@@ -568,6 +568,10 @@ hr {
 }
 
 @media only screen and (max-width: 1024px) {
+  @font-face {
+    font-family: signerica fat;
+    src: url(../fonts/Signerica_Fat.ttf);
+  }
   header .wrapper-jfr .card-jfr img {
     width: 100%;
   }
@@ -611,14 +615,18 @@ hr {
     text-align: justify;
     max-width: 85%;
     margin-bottom: 50px;
+    line-height: 1.6;
   }
   #main-container .experience-bg {
-    height: 155vh;
+    height: 135vh;
+    background-image: none;
+    background-color: #E9F1F7;
   }
   #main-container .experience-bg .experience {
     text-align: center;
     margin-right: 0;
     margin-bottom: 35px;
+    color: #131B23;
   }
   #main-container .experience-bg .description-exp {
     display: block;
@@ -632,6 +640,7 @@ hr {
   #main-container .experience-bg .text-exp p {
     max-width: 85%;
     text-align: justify;
+    color: #131B23;
   }
   #main-container .projet {
     text-align: center;
@@ -683,12 +692,15 @@ hr {
     filter: grayscale(0);
   }
   #main-container .hobbie-bg {
-    height: 172vh;
+    height: 165vh;
+    background-image: none;
+    background-color: #E9F1F7;
   }
   #main-container .hobbie-bg .hobbie {
     text-align: center;
     margin-left: 0;
     margin-bottom: 35px;
+    color: #131B23;
   }
   #main-container .hobbie-bg .wrapper {
     display: flex;
@@ -699,9 +711,11 @@ hr {
   }
   #main-container .hobbie-bg .wrapper .card-hobbie:hover {
     transform: translateY(0px);
+    pointer-events: none;
   }
   #main-container .hobbie-bg .wrapper .card-hobbie:hover .info {
     transform: translateY(0px);
+    pointer-events: none;
   }
   #main-container .btn button:hover {
     display: none;

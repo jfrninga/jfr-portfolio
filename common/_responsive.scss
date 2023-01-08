@@ -1,5 +1,10 @@
 @media only screen and (max-width: 1024px) {
 
+    @font-face {
+        font-family: signerica fat;
+        src: url(../fonts/Signerica_Fat.ttf);
+    }
+
     header {
         .wrapper-jfr {
             .card-jfr {
@@ -63,17 +68,21 @@
                 text-align: justify;
                 max-width: 85%;
                 margin-bottom: 50px;
+                line-height: 1.6;
             }
         }
 
         // partie expérience pro
         .experience-bg {
-            height: 155vh;
+            height: 135vh;
+            background-image: none;
+            background-color: $color-mid-blue;
 
             .experience {
                 text-align: center;
                 margin-right: 0;
                 margin-bottom: 35px;
+                color: $color-mid-black;
             }
 
             .description-exp {
@@ -94,6 +103,7 @@
                 p {
                     max-width: 85%;
                     text-align: justify;
+                    color: $color-mid-black;
                 }
             }
         }
@@ -166,12 +176,15 @@
 
         // partie hobbies
         .hobbie-bg {
-            height: 172vh;
+            height: 165vh;
+            background-image: none;
+            background-color: $color-mid-blue;
 
             .hobbie {
                 text-align: center;
                 margin-left: 0;
                 margin-bottom: 35px;
+                color: $color-mid-black;
             }
 
             .wrapper {
@@ -184,9 +197,11 @@
                 .card-hobbie {
                     &:hover {
                         transform: translateY(0px);
+                        pointer-events: none;
 
                         .info {
                             transform: translateY(0px);
+                            pointer-events: none;
                         }
                     }
                 }
